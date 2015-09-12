@@ -13,12 +13,12 @@ function _init() {
 
 if (defined('ENVIRONMENT'))
 {
-	loadConfig();
+	_loadConfig();
 	switch (ENVIRONMENT)
 	{
 		case 'DEV':
 			error_reporting(E_ALL);
-			configOverride();
+			_configOverride();
 		break;
 	
 		case 'TESTING':
