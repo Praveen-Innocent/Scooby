@@ -1,4 +1,4 @@
-<div style="min-height:4000px"> s </div>
+
 </body>
 
 <script type="text/javascript" src="<?php echo Config::$URL; ?>static/js/jquery.min.js"></script>

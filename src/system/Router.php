@@ -20,8 +20,8 @@ function Route()
 	// Split the url into segments
 	$segments = explode('/', $url);
 	// Do our default checks
-	if(isset($segments[1]) && $segments[1] != '') $controller = $segments[1];
-	if(isset($segments[2]) && $segments[2] != '') $action = $segments[2];
+	if(isset($segments[0]) && $segments[0] != '') $controller = $segments[0];
+	if(isset($segments[1]) && $segments[1] != '') $action = $segments[1];
 
 	// Get our controller file
     $path = APP_DIR . 'controllers/' . $controller . '.controller.php';

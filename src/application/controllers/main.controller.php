@@ -3,11 +3,23 @@
 class Main extends Controller {
 	
 	function index()
-	{
+	{	
+		$user = $this->loadModel('userModel');
+		
+		$this->loadHelper('url_helper');
+		
 
-		$template = $this->loadView('main');
-		$template->render();
+		
+		if($user->isLoggedIn()) 
+		{	
+			Url_helper::redirect("home");
+		}
+		else Url_helper::redirect("login");
+
 	}
+
+
+	
     
 }
 

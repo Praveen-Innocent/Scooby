@@ -11,6 +11,12 @@ class Url_helper {
 		$parts = explode('/', $_SERVER['REQUEST_URI']);
 	    return isset($parts[$seg]) ? $parts[$seg] : false;
 	}
+
+	function redirect($location) {
+		header("Location: $location");
+		//js fallback
+		print '<script language="javascript">window.location="'.$location.'"</script>';	
+	}
 	
 }
 
