@@ -10,10 +10,10 @@ class ConfigOverride {
 		Config :: $Database = 'schoolneuron';
 		
 		//URLs
-		Config :: $URL = 'http://localhost/Scooby/dev/';
-		Config :: $js_url = 'http://localhost/Scooby/dev/static/js/';
-		Config :: $css_url = 'http://localhost/Scooby/dev/static/css/';
-		Config :: $images_url = 'http://localhost/Scooby/dev/';
+		Config :: $URL = 'http://localhost/Scooby/src/';
+		Config :: $js_url = 'http://localhost/Scooby/src/static/js/';
+		Config :: $css_url = 'http://localhost/Scooby/src/static/css/';
+		Config :: $images_url = 'http://localhost/Scooby/src/';
 	}
 	
 	

@@ -14,12 +14,11 @@ define('APP_DIR', ROOT_DIR .'application/');
 require(ROOT_DIR .'system/Core.php');
 //Load & Set App Enviroment
 _setEnivironment();
-init();
+_init();
 
 require(ROOT_DIR .'system/Loader.php');
 
 // Define base URL
 define('BASE_URL', Config::$URL);
 
-init();
 ?>
